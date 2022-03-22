@@ -4,6 +4,9 @@ using namespace std;
 
 int arraySum(int *arr, int size) {
 
+    if(size == 0) 
+        return 0;
+        
     if(size - 1 == 0)
         return arr[size - 1];
 
