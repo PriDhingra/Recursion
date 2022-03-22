@@ -3,6 +3,9 @@
 using namespace std;
 
 int exponent(int num1, int num2) {
+    if(num2 == 0)
+        return 1;
+
     if(num2 == 1)
         return num1;
 
@@ -15,7 +18,7 @@ int exponent(int num1, int num2) {
 
 int main() {
     int num1 = 2;
-    int num2 = 10;
+    int num2 = 20;
 
     cout<<exponent(num1, num2);
 
