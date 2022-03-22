@@ -7,8 +7,7 @@ bool isPalindrome(string &str, int start) {
         return true;
 
     if(str[start] == str[str.length() - 1 - start]) {
-        bool ans = isPalindrome(str, start + 1);
-        return ans;
+        return isPalindrome(str, start + 1);
     } else  
         return false;
     
