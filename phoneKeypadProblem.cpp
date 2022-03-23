@@ -11,7 +11,7 @@ void phoneKeypad(string str, string output, int index, vector<string> &result) {
         return;
     }
 
-    int temp = str[index] - 48;
+    int temp = str[index] - '0';
     string temp2 = mapping[temp];
     for(int i = 0;i < temp2.length();i++) {
         output += temp2[i];
