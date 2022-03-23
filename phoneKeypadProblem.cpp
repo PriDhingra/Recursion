@@ -16,7 +16,7 @@ void phoneKeypad(string str, string output, int index, vector<string> &result) {
     for(int i = 0;i < temp2.length();i++) {
         output += temp2[i];
         phoneKeypad(str, output, index + 1, result);
-        output = output.substr(0, output.length() - 1);
+        output.pop_back();
     }
 }
 
