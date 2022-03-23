@@ -5,7 +5,8 @@ using namespace std;
 
 void powerSets(string str, string output, int index, vector<string> &result) {
     if(index >= str.length()) {
-        result.push_back(output);
+        if(output.length() != 0) 
+            result.push_back(output);
         return;
     }
 
@@ -18,7 +19,7 @@ int main() {
     string str = "abcdef";
 
     vector<string> result;
-    string output;
+    string output = "";
     int index = 0;
     powerSets(str, output, index, result);
 
